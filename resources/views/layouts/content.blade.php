@@ -1,8 +1,9 @@
 <div class="row">
     <div class="side">
         <h2>Sobre nosotros</h2>
-        <h5>Imagen de referencia:</h5>
-        <div class="fakeimg" style="height:200px;"></div>
+        
+        <img class="Logo" src ='logoig.png'>
+        
         <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
         <h3>Más Info...</h3>
         <p>Lorem ipsum dolor sit ame.</p>
