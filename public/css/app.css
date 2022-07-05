@@ -80,7 +80,7 @@ body {
 .footer {
     padding: 20px;
     text-align: center;
-    background: #ddd;
+    background: #FEEFE8;
 }
 
 @media screen and (max-width: 700px) {
