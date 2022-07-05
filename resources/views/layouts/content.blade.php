@@ -7,9 +7,7 @@
         <p>InformaticsGuards, es una empresa de desarrollo de software.</p>
         <h3>Más Info...</h3>
         <p>Tenemos más de 10 años de experiencia en el mercado.</p>
-        <div class="fakeimg" style="height:60px;"></div><br>
-        <div class="fakeimg" style="height:60px;"></div><br>
-        <div class="fakeimg" style="height:60px;"></div>
+        <img class="img1" src ="{{ asset ('assets/programacion-web.png') }}">
     </div>
     <div class="main">
         <h2>¿Qué ofrecemos?</h2>
