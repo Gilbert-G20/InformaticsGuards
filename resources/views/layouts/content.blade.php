@@ -2,7 +2,7 @@
     <div class="side">
         <h2>Sobre nosotros</h2>
         
-        <img class="Logo" src ='logoig.png'>
+        <img class="Logo" src ="{{ asset('assets/logoig.png') }}">
         
         <p>InformaticsGuards, es una empresa de desarrollo de software.</p>
         <h3>Más Info...</h3>
