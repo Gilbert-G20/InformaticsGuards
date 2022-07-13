@@ -19,4 +19,9 @@ class Usuario extends Model
     {
         return Usuario::all();
     }
+
+    public function obtenerUsuarioID($id)
+    {
+        return Usuario::find($id);
+    }
 }
