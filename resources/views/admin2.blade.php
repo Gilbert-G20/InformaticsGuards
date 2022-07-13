@@ -8,13 +8,10 @@
     <title>InformaticsGuards</title>
 </head>
 <body>
-
     @include ('layouts.header')
-
     <main>
-       
-       
+        
     </main>
-     @include ('layouts.footer')
+    @include ('layouts.footer')
 </body>
 </html>
