@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UsuarioController;
+use App\Models\Usuario;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +18,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/admin', [UsuarioController::class, 'index']);
+
+Route::get('/inicio/register', [UsuarioController::class, 'create']);
+
+Route::post('/inicio/register', [UsuarioController::class, 'store']);
+
+Route::get('/admin/admin2_2/{id}', [UsuarioController::class, 'show']);
+
+Route::get('/admin/admin2/{id}', [UsuarioController::class, 'edit']);
+
+Route::put('/admin/admin2/{id}', [UsuarioController::class, 'update']);
+
+Route::get('/admin/eliminar/{id}', [UsuarioController::class, 'destroy']);
