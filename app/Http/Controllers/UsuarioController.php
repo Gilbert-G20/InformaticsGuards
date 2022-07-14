@@ -51,7 +51,9 @@ class UsuarioController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $usuario = new Usuario($request->all());
+        $usuario->save();
+        return redirect()->action([UsuarioController::class, 'index']);
     }
 
     /**
