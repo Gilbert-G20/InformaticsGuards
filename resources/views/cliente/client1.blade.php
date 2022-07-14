@@ -10,7 +10,12 @@
 <body>
     @include ('layouts.header')
     <main>
-        
+    <div class="contenedor">
+
+    <button class="btn btn1">Turnos disponibles por semana</button>
+    <button class="btn btn2">Turnos confirmados por semana</button>
+
+    </div>
     </main>
     @include ('layouts.footer')
 </body>
