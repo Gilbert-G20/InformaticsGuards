@@ -89,7 +89,10 @@ class UsuarioController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $usuario = Usuario::find($id);
+        $usuario->fill($request->all());
+        $usuario->save();
+        return redirect()->action([UsuarioController::class, 'admin.admin2_1']);
     }
 
     /**
