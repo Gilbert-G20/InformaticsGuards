@@ -43,6 +43,11 @@ class UsuarioController extends Controller
         return view('inicio.register');
     }
 
+    public function session()
+    {
+        return view('inicio.login');
+    }
+
     /**
      * Store a newly created resource in storage.
      *
