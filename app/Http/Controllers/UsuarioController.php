@@ -76,7 +76,8 @@ class UsuarioController extends Controller
      */
     public function edit($id)
     {
-        //
+        $usuario = $this->usuarios->obtenerUsuarioID($id);
+        return view('admin.admin2', ['usuario' => $usuario]);
     }
 
     /**
