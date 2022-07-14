@@ -103,6 +103,8 @@ class UsuarioController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $usuario = Usuario::find($id);
+        $usuario->delete();
+        return redirect()->action([UsuarioController::class, 'admin.admin2_1']);
     }
 }
