@@ -23,6 +23,8 @@ Route::get('/admin', [UsuarioController::class, 'index']);
 
 Route::get('/inicio/register', [UsuarioController::class, 'create']);
 
+Route::get('/inicio/login', [UsuarioController::class, 'session']);
+
 Route::post('/inicio/register', [UsuarioController::class, 'store']);
 
 Route::get('/admin/admin2_2/{id}', [UsuarioController::class, 'show']);
