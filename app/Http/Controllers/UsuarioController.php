@@ -17,7 +17,7 @@ class UsuarioController extends Controller
      */
     public function __construct(Usuario $usuarios)
     {
-        this-> usuarios = $usuarios;
+        $this->usuarios = $usuarios;
     }
     
     /**
