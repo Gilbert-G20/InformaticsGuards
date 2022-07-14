@@ -64,7 +64,8 @@ class UsuarioController extends Controller
      */
     public function show($id)
     {
-        //
+        $usuario = $this->usuarios->obtenerUsuarioID($id);
+        return view('admin.admin2_2', ['usuario' => $usuario]);
     }
 
     /**
