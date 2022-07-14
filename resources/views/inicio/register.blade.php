@@ -10,7 +10,7 @@
 <body>
     @include ('layouts.header')
     <main>
-        <form> action="/inicio/register" method ="POST">
+        <form action="/inicio/register" method ="POST">
             @csrf
             <label>DNI:</label>
             <input type="text" name="DNI" placeholder="Su DNI">
@@ -20,12 +20,12 @@
             <input type="text" name="apellido" placeholder="Su Apellido">
             <label>Fecha de Nacimiento:;</label>
             <input type="text" name="Fecha de Nacimiento" placeholder="Fecha de Nacimiento">
-            <label>Telefono:;</label>
+            <label>Telefono:</label>
             <input type="text" name="Telefono" placeholder="Su Telefono">
-            <label>Contraseña:;</label>
+            <label>Contraseña:</label>
             <input type="text" name="Contraseña" placeholder="Su Contraseña">
-            <label>Role:;</label>
-            <input type="Role" name="Role" placeholder="Su Role">
+            <label>Role:</label>
+            <input type="text" name="Role" placeholder="Su Role">
             <input type="submit" value="Guardar">
         </form>
     </main>
