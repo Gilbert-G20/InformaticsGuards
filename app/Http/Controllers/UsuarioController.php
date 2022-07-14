@@ -53,7 +53,7 @@ class UsuarioController extends Controller
     {
         $usuario = new Usuario($request->all());
         $usuario->save();
-        return redirect()->action([UsuarioController::class, 'index']);
+        return redirect()->action([UsuarioController::class, 'admin.admin2_1']);
     }
 
     /**
