@@ -10,7 +10,7 @@
 <body>
     @include ('layouts.header')
     <main>
-        <div>
+        <div class="show-box">
             <p> DNI: {{ $usuario->DNI}}</p>
             <p> Nombre: {{ $usuario->Nombre}}</p>
             <p> Apellido: {{ $usuario->Apellido}}</p>
