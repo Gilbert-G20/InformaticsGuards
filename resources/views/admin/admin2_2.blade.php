@@ -10,7 +10,15 @@
 <body>
     @include ('layouts.header')
     <main>
-        
+        <div>
+            <p> DNI: {{ $usuario->DNI}}</p>
+            <p> Nombre: {{ $usuario->Nombre}}</p>
+            <p> Apellido: {{ $usuario->Apellido}}</p>
+            <p> Fecha de nacimietno: {{ $usuario->fecha_nacimiento}}</p>
+            <p> telefono: {{ $usuario->telefono}}</p>
+            <p> contraseña: {{ $usuario->contraseña}}</p>
+            <p> role: {{ $usuario->role}}</p>
+        </div>
     </main>
     @include ('layouts.footer')
 </body>
