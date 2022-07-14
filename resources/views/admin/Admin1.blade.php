@@ -9,14 +9,17 @@
 </head>
 <body>
     @include ('layouts.header')
+    <hr>
+    <h2>Menú de Administrador</h2>
+    <hr>
+    @foreach ($usuarios as $usuario)
+        <h5>Bienvenido, {{ $usuario->Nombre }} {{ $usuario->Apellido }}</h5>
+    @endforeach
     <main>
-
-    <div class="contenedor">
-
-        <button class="btn btn1">Datos de clientes</button>
-        <button class="btn btn2">Turnos de clientes</button>
-       
-    </div>
+        <div class="contenedor">
+            <a href="{{ url('admin2_1') }}"><button class="btn btn1">Datos de clientes</button></a>
+            <a href="{{ url('admin3') }}"><button class="btn btn2">Turnos de clientes</button></a>
+        </div>
     </main>
     @include ('layouts.footer')
 </body>

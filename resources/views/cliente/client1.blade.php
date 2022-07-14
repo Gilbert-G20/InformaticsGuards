@@ -9,12 +9,16 @@
 </head>
 <body>
     @include ('layouts.header')
+    <hr>
+    <h2>Menú de Cliente</h2>
+    <hr>
+    @foreach ($usuarios as $usuario)
+        <h5>Bienvenido, {{ $usuario->Nombre }} {{ $usuario->Apellido }}</h5>
+    @endforeach
     <main>
     <div class="contenedor">
-
-    <button class="btn btn1">Turnos disponibles por semana</button>
-    <button class="btn btn2">Turnos confirmados por semana</button>
-
+    <a href="{{ url('client2') }}"><button class="btn btn1">Turnos disponibles por semana</button></a>
+    <a href="{{ url('client3') }}"><button class="btn btn2">Turnos confirmados por semana</button></a>
     </div>
     </main>
     @include ('layouts.footer')
