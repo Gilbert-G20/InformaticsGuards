@@ -3,9 +3,23 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Usuario;
 
 class UsuarioController extends Controller
 {
+
+    protected $usuarios;
+    
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function __construct(Usuario $usuarios)
+    {
+        this-> usuarios = $usuarios;
+    }
+    
     /**
      * Display a listing of the resource.
      *
@@ -13,7 +27,10 @@ class UsuarioController extends Controller
      */
     public function index()
     {
-        //
+
+        $usuarios = $this->usuarios->obtenerUsuarios();
+        return view('admin.admin2_1', ['usuarios' => $usuarios]);
+//
     }
 
     /**
