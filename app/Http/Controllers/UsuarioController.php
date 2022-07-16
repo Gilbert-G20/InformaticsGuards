@@ -34,7 +34,7 @@ class UsuarioController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Muestra el formulario para crear un nuevo recurso.
      *
      * @return \Illuminate\Http\Response
      */
@@ -49,7 +49,7 @@ class UsuarioController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Almacene un recurso recién creado .
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -62,7 +62,7 @@ class UsuarioController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Muestra el recurso especificado.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -74,7 +74,7 @@ class UsuarioController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Muestra el formulario para editar un recurso.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -86,7 +86,7 @@ class UsuarioController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Actualiza un recurso especificado en la BD.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
@@ -101,7 +101,7 @@ class UsuarioController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Elimina un Recurso de la BD.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
