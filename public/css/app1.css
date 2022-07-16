@@ -8,23 +8,13 @@ body {
     margin: 0;
 }
 
-.header {
-    padding: 0.01%;
-    text-align: center;
-    background: #078080;
-    color: white;
-}
-
-.header h1 {
-    font-size: 40px;
-}
-
 .navbar {
     overflow: hidden;
     background-color: #078080;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.342);
 }
 
 .navbar a {
@@ -56,9 +46,11 @@ body {
 .side {
     -ms-flex: 30%;
     flex: 30%;
-    background-color: #f1f1f1;
+    background-color: white;
     padding: 20px;
     text-align: center;
+    border: 5px solid #078080;
+    border-radius: 5%;
 }
 
 .main {   
@@ -78,14 +70,13 @@ body {
     padding: 20px;
 }
 
-
 .footer {
-    padding: 20px;
+    margin-top: 8%;
+    padding: 2%;
     background: #aaa;
 }
 
 .footer-content, .img-col{
-    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, minmax(100px, 1fr));
     gap: 25px 25px;
