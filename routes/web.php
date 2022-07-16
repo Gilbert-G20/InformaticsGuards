@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UsuarioController;
 use App\Models\Usuario;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,5 +37,7 @@ Route::put('/admin/admin2/{id}', [UsuarioController::class, 'update']);
 Route::get('/admin/eliminar/{id}', [UsuarioController::class, 'destroy']);
 
 Auth::routes();
+
+Route::get('/evento', [App\Http\Controllers\EventoController::class, 'index']);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
