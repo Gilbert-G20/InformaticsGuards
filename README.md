@@ -63,4 +63,21 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
-## Informacion del Proyecto 
+## Información del Proyecto 
+
+Integrantes:
+-Domingo González C.I: 29.515.544
+-Gilbert Gómez C.I: 28.412.498
+
+Para este proyecto se solicitó una sitio web para una empresa 
+llamada informaticsGuards spa, la página debe cumplir con
+una serie de requerimientos mínimos, como lo son:
+
+- Sistema de registro de horarios para empleados 
+- Sistema de verificacion de horarios para empleados
+- Vista personalizada para los usuarios 
+- Vista personalizada para los Administradores y super usuarios
+- Menú Principal 
+- Ventana de Registro 
+- Ventana de Inicio de sesión 
+- información sobre nosotros 
