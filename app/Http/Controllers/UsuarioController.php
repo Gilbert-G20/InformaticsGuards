@@ -40,12 +40,24 @@ class UsuarioController extends Controller
      */
     public function create()
     {
-        return view('inicio.register');
+        return view('auth.register');
     }
 
     public function session()
     {
-        return view('inicio.login');
+        return view('auth.login');
+    }
+
+    public function session_start()
+    {
+        $usuario = $this->usuario->obtenerUsuario();
+        
+        if ($usuario->role == "admin") {
+            return view('admin.Admin1', ['usuario' => $usuario]);
+        } else {
+            return view('cliente.client1', ['usuario' => $usuario]);
+        }
+        
     }
 
     /**
@@ -58,7 +70,8 @@ class UsuarioController extends Controller
     {
         $usuario = new Usuario($request->all());
         $usuario->save();
-        return redirect()->action([UsuarioController::class, 'admin.admin2_1']);
+        $usuarios = $this->usuarios->obtenerUsuario();
+        return view('admin.admin2_1', ['usuarios' => $usuarios]);
     }
 
     /**
@@ -110,6 +123,7 @@ class UsuarioController extends Controller
     {
         $usuario = Usuario::find($id);
         $usuario->delete();
-        return redirect()->action([UsuarioController::class, 'admin.admin2_1']);
+        $usuarios = $this->usuarios->obtenerUsuario();
+        return view('admin.admin2_1', ['usuarios' => $usuarios]);
     }
 }

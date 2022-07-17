@@ -19,6 +19,7 @@ class CreateUsuariosTable extends Migration
             $table->string('Nombre');
             $table->string('Apellido');
             $table->date('fecha_nacimiento');
+            $table->string('email');
             $table->integer('telefono');
             $table->string('contraseña');
             $table->string('role');

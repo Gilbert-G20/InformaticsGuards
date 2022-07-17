@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Auth;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Auth::routes();
 
 Route::get('/', function () {
     return view('index');
@@ -22,11 +23,11 @@ Route::get('/', function () {
 
 Route::get('/admin', [UsuarioController::class, 'index']);
 
-Route::get('/inicio/register', [UsuarioController::class, 'create']);
+Route::get('/auth/register', [UsuarioController::class, 'create']);
 
-Route::get('/inicio/login', [UsuarioController::class, 'session']);
+Route::get('/auth/login', [UsuarioController::class, 'session']);
 
-Route::post('/inicio/register', [UsuarioController::class, 'store']);
+Route::post('/auth/register', [UsuarioController::class, 'store']);
 
 Route::get('/admin/admin2_2/{id}', [UsuarioController::class, 'show']);
 
@@ -35,7 +36,3 @@ Route::get('/admin/admin2/{id}', [UsuarioController::class, 'edit']);
 Route::put('/admin/admin2/{id}', [UsuarioController::class, 'update']);
 
 Route::get('/admin/eliminar/{id}', [UsuarioController::class, 'destroy']);
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
