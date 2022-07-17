@@ -10,7 +10,7 @@
 <body>
     @include ('layouts.header')
     <main>
-        
+        @include('Evento.index');
     </main>
     @include ('layouts.footer')
 </body>

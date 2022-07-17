@@ -36,3 +36,5 @@ Route::get('/admin/admin2/{id}', [UsuarioController::class, 'edit']);
 Route::put('/admin/admin2/{id}', [UsuarioController::class, 'update']);
 
 Route::get('/admin/eliminar/{id}', [UsuarioController::class, 'destroy']);
+
+Route::get('/evento', [App\Http\Controllers\EventoController::class, 'index']);
