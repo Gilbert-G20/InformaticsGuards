@@ -1,21 +1,32 @@
-body {
+@import url('app3.css');
+
+main {
    margin: auto;
    padding: 50px;
 }
- table, td, th {
+
+h1 {
+   text-align: center;
+}
+
+table, td, th {
    border: 1px solid black;
 }
- table {
+
+table {
    border-collapse: collapse;
    width: 100%;
 }
- th {
+
+th {
    height: 70px;
 }
- td {
+
+td {
    height: 30px;
 }
- .button {
+
+.button {
    background-color: #4CAF50;
    border: none;
    color: white;

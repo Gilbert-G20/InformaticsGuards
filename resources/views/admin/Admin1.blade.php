@@ -17,8 +17,8 @@
     @endforeach
     <main>
         <div class="contenedor">
-            <a href="{{ url('admin2_1') }}"><button class="btn btn1">Datos de clientes</button></a>
-            <a href="{{ url('admin3') }}"><button class="btn btn2">Turnos de clientes</button></a>
+            <a href="{{ url('admin2_1') }}"><button class="btn btn1">Datos de usuarios</button></a>
+            <a href="{{ url('admin3') }}"><button class="btn btn2">Turnos de usuarios</button></a>
         </div>
     </main>
     @include ('layouts.footer')

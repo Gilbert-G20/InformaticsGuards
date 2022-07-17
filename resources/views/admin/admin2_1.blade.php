@@ -10,23 +10,37 @@
 <body>
     @include ('layouts.header')
     <main>
-
-    @foreach ($usuarios as $usuario)
-    <tr>
-        <td>{{ $usuario->DNI }}</td>
-        <td>{{ $usuario->Nombre }}</td>
-        <td>{{ $usuario->Apellido }}</td>
-        <td>{{ $usuario->fecha_nacimiento }}</td>
-        <td>{{ $usuario->telefono }}</td>
-        <td>{{ $usuario->contraseña }}</td>
-        <td>{{ $usuario->role }}</td>
-        <td>
-            <a href="/admin/admin2_2/{{$usuario->id}}">Ver</a>
-            <a href="/admin/admin2/{{$usuario->id}}">Editar</a>
-            <a href="/admin/eliminar/{{$usuario->id}}" onclick="return eliminarUsuario('Eliminar Usuario')">Eliminar</a>
-        </td>
-</tr>
-@endforeach
+        <h1>Lista de Usuarios</h1>
+        <table>
+            <tr>
+                <th>DNI</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Fecha de Nacimiento</th>
+                <th>Correo</th>
+                <th>Teléfono</th>
+                <th>Contraseña</th>
+                <th>Role</th>
+                <th>Operaciones</th>
+            </tr>
+            @foreach ($usuarios as $usuario)
+            <tr>
+                <td>{{ $usuario->DNI }}</td>
+                <td>{{ $usuario->Nombre }}</td>
+                <td>{{ $usuario->Apellido }}</td>
+                <td>{{ $usuario->fecha_nacimiento }}</td>
+                <td>{{ $usuario->email }}</td>
+                <td>{{ $usuario->telefono }}</td>
+                <td>{{ $usuario->contraseña }}</td>
+                <td>{{ $usuario->role }}</td>
+                <td>
+                    <a href="/admin/admin2_2/{{$usuario->id}}">Ver</a>
+                    <a href="/admin/admin2/{{$usuario->id}}">Editar</a>
+                    <a href="/admin/eliminar/{{$usuario->id}}" onclick="return eliminarUsuario('Eliminar Usuario')">Eliminar</a>
+                </td>
+            </tr>
+            @endforeach
+        </table>
     </main>
     @include ('layouts.footer')
 </body>

@@ -10,25 +10,46 @@
 <body>
     @include ('layouts.header')
     <main>
-    <form action="/admin/admin2/{{ $usuario->id}}" method ="POST">
-        @csrf
-        {{ method_field('PUT') }}
-        <label>DNI:</label>
-        <input type="text" name="DNI" placeholder="Su DNI" value="{{ $usuario->DNI}}">
-        <label>Nombre:</label>
-        <input type="text" name="Nombre" placeholder="Su Nombre" value="{{ $usuario->Nombre}}">
-        <label>Apellido:</label>
-        <input type="text" name="Apellido" placeholder="Su Apellido" value="{{ $usuario->Apellido}}">
-        <label>Fecha de Nacimiento:</label>
-        <input type="text" name="Fecha de Nacimiento" placeholder="Su fecha de Nacimiento" value="{{ $usuario->fecha_nacimiento}}">
-        <label>telefono:</label>
-        <input type="text" name="Telefono" placeholder="Su Telefono" value="{{ $usuario->telefono}}">
-        <label>contraseña:</label>
-        <input type="text" name="Contraseña" placeholder="Su contraseña" value="{{ $usuario->contraseña}}">
-        <label>role:</label>
-        <input type="text" name="Role" placeholder="Su Role" value="{{ $usuario->role}}">
-        <input type="submit" value="Guardar">
-    </form>
+        <form action="/admin/admin2/{{ $usuario->id}}" method ="POST">
+            @csrf
+            {{ method_field('PUT') }}
+            <div class="form-element">
+                <label>DNI:</label>
+                <input type="text" name="DNI" placeholder="Su DNI">
+            </div>
+            <div class="form-element">
+                <label>Nombre:</label>
+                <input type="text" name="Nombre" placeholder="Su nombre">
+            </div>
+            <div class="form-element">
+                <label>Apellido:</label>
+                <input type="text" name="Apellido" placeholder="Su Apellido">
+            </div>
+            <div class="form-element">
+                <label>Fecha de Nacimiento:</label>
+                <input type="date" name="fecha_nacimiento">
+            </div>
+            <div class="form-element">
+                <label>Correo:</label>
+                <input type="email" name="email" placeholder="Su correo electrónico">
+            </div>
+            <div class="form-element">
+                <label>Teléfono:</label>
+                <input type="text" name="telefono" placeholder="Su Teléfono">
+            </div>
+            <div class="form-element">
+                <label>Contraseña:</label>
+                <input type="password" name="contraseña" placeholder="Su contraseña">
+            </div>
+            <div class="form-element">
+                <label>Rol:</label>
+                <input type="radio" name="role" value="admin"> Admin
+                <input type="radio" name="role" value="client"> Cliente
+            </div>
+                <div class="form-element">
+                <input type="submit" value="Registrar">
+            </div>
+        </form>
     </main>
     @include ('layouts.footer')
 </body>
