@@ -4,6 +4,10 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <!-- Fullcalendar -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/locales-all.js"></script>
 </head>
 <header class="header">
     <nav class="navbar">
@@ -34,3 +38,4 @@
         @endguest
     </nav>
 </header>
+<script src="{{ asset('js/agenda.js') }}" defer></script>
