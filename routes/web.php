@@ -38,6 +38,4 @@ Route::get('/admin/eliminar/{id}', [UsuarioController::class, 'destroy']);
 
 Auth::routes();
 
-Route::get('/evento', [App\Http\Controllers\EventoController::class, 'index']);
-
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
